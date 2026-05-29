@@ -87,7 +87,7 @@ npm run dev
 <h2>👨‍💻 Author</h2>
 
 <p>
-Rohith P<br>
+P.ROHITH <br>
 B.Tech Student | AI & ML Enthusiast
 </p>
 
