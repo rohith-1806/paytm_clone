@@ -1,0 +1,135 @@
+.download-section {
+  background: linear-gradient(135deg, #0f3460 0%, #16213e 100%);
+  padding: 70px 80px;
+}
+
+.download-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.download-left { flex: 1; }
+
+.download-badge {
+  display: inline-block;
+  background: rgba(0,185,241,0.2);
+  color: #00b9f1;
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 6px 16px;
+  border-radius: 50px;
+  border: 1px solid rgba(0,185,241,0.4);
+  margin-bottom: 20px;
+}
+
+.download-title {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.25;
+  margin-bottom: 16px;
+}
+
+.download-desc {
+  font-size: 1rem;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.sms-box {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 28px;
+  flex-wrap: wrap;
+}
+
+.phone-input-wrap {
+  display: flex;
+  align-items: center;
+  background: rgba(255,255,255,0.1);
+  border: 1.5px solid rgba(255,255,255,0.2);
+  border-radius: 10px;
+  overflow: hidden;
+  flex: 1;
+  min-width: 200px;
+}
+
+.country-code {
+  padding: 0 12px;
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.7);
+  border-right: 1px solid rgba(255,255,255,0.2);
+  white-space: nowrap;
+}
+
+.phone-input {
+  background: none;
+  border: none;
+  outline: none;
+  padding: 13px 14px;
+  color: #fff;
+  font-size: 0.95rem;
+  width: 100%;
+}
+
+.phone-input::placeholder { color: rgba(255,255,255,0.4); }
+
+.sms-btn {
+  padding: 13px 26px;
+  background: #00b9f1;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.25s;
+  flex-shrink: 0;
+}
+
+.sms-btn:hover { background: #0096c7; }
+.sms-btn.sent { background: #00b894; }
+
+.store-badges {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.store-badges a img {
+  height: 44px;
+  border-radius: 8px;
+  transition: transform 0.2s;
+}
+
+.store-badges a img:hover { transform: scale(1.05); }
+
+.download-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.download-phone {
+  max-width: 280px;
+  width: 100%;
+  filter: drop-shadow(0 20px 50px rgba(0,185,241,0.3));
+  animation: floatPhone 3s ease-in-out infinite;
+}
+
+@media (max-width: 1024px) {
+  .download-section { padding: 50px 30px; }
+}
+
+@media (max-width: 768px) {
+  .download-section { padding: 40px 20px; }
+  .download-container { flex-direction: column; gap: 36px; text-align: center; }
+  .sms-box { justify-content: center; }
+  .store-badges { justify-content: center; }
+  .download-title { font-size: 1.7rem; }
+  .download-phone { max-width: 200px; }
+}
